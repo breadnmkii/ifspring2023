@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Work Sans', sans-serif;
+
+}
+
+body {
+    background: rgb(12, 12, 12);
+    color: limegreen;
+}
+
+header {
+    margin: 10px 0px 10px 0px
+}
+
+main {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+}
+
+section {
+    margin: 0 5% 0 5%;
+    padding: 20px 0px 20px 0px;
+}
+
+img {
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px
+}
+
+div {
+    margin: 0px 25px 0px 25px;
+    padding: 5px 0px 5px 0px; 
+}
+
+footer {
+    margin-top: 50px;
+    padding: 15px;
+    text-align: right;
+}
+
+h2, h3 {
+    padding: 10px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 3em;
+    font-family: 'Kaushan Script'
+}
+
+.actor {
+    display: inline;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.action {
+    display: inline;
+    font-style: italic;
+    font-size: 0.95em;
+}
+
+.a_side {
+    background: rgb(19, 165, 0);
+}
+
+.b_side {
+    background: rgb(16, 138, 0);
+}
