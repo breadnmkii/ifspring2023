@@ -56,12 +56,13 @@ p {
 }
 
 #frame0 #song-title {
-    padding: 1% 0% 0% 5%;
+    padding: 1% 0% 1% 5%;
     background-color: rgba(228, 232, 235, 0.25);
     position: relative;
     top: 5%;
     left: 55%;
     right: 0px;
+    white-space: nowrap;
 }
 
 #frame0 div {
