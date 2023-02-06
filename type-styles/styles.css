@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color:  #E95420;
+    background-image:url("ubuntu-background-2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body {
+    margin: 10rem;
+    min-width: 650px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#terminal-tab {
+    color: white;
+    letter-spacing: 0.07rem;
+    background-color: gray;
+    padding: 0.5rem 1rem;
+    border-radius: 10px 10px 0px 0px
+}
+
+#terminal {
+    padding: 1rem;
+    font-size: 20px; 
+    
+    font-weight: 400;
+    font-style: normal;
+    background-color: rgb(48, 10, 36);
+    color: white;
+}
+
+#terminal div {
+    margin: 10px 0px;
+}
+
+#terminal-buttons {
+    margin-right: 5px;
+}
+
+button {
+    width: 20px;
+    height: 20px;
+    color: rgb(66, 66, 66);
+    background-color: rgb(172, 172, 172);
+    border-radius: 50%;
+}
+
+#close-button {
+    background-color: #E95420;
+}
+
+button, input[type="submit"], input[type="reset"] {
+	border: none;
+	padding: 0;
+    margin: 0;
+	cursor: pointer;
+	outline: inherit;
+}
+
+p {
+    display: inline;
+}
+
+h1{
+    padding: 1.5rem 1.5rem 1.5rem 0rem;
+    font-size: 100pt;
+}
+
+h2 {
+    font-size: 25pt;
+    color:rgb(117, 206, 76);
+}
+
+h3{
+    font-size: 25px;
+    font-family: 'Ubuntu Mono', monospace;
+    text-align: right;
+}
+
+h4{
+    margin-top: 60px;
+    font-size: 24px;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+h6 {
+    display: inline;
+    color: rgb(117, 206, 76);
+    text-transform: lowercase;
+}
+
+.header{
+   color: grey; 
+}
+
+/** Weights **/
+.light{
+    font-weight: 300;
+}
+
+.reg{
+    font-weight: 400;
+}
+
+.med{
+    font-weight: 500;
+}
+
+.bold{
+    font-weight: 700;
+}
+
+/** Styles **/
+.italic{
+    font-style: italic;
+}
+
+/** Spacing **/
+.big{
+    letter-spacing: 0.2em;
+}
+
+.small{
+    letter-spacing: -0.06em;
+}
+
+/** Decoration **/
+.under{
+    text-decoration: underline;
+}
+
+.through{
+    text-decoration: line-through;
+}
+
+.over{
+    text-decoration: overline;
+}
+
+/** Transform **/
+.upper{
+    text-transform: uppercase;
+}
+
+.lower{
+    text-transform: lowercase;
+}
+
+.cap{
+    text-transform: capitalize;
+}
