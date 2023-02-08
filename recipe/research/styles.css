@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+}
+
+h2 {
+    font-size: 30pt;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 20pt;
+}
+
+h4 {
+    font-style: italic;
+}
+
+h5 {
+    font-size: 15pt;
+}
+
+h6 {
+    font-weight: bolder;
+    font-size: 10pt;
+}
+
+body {
+    background-color: rgba(255, 229, 115, 0.897);
+    font-family:'Ubuntu', sans-serif;
+}
+
+img {
+    display: block;
+    width: 250px;
+    border-radius: 20px;
+    margin: auto auto;
+}
+
+div {
+    padding: 2rem;
+}
+
+#intro {
+    text-align: center;
+}
+
+#imagery {
+    text-align: center;
+}
