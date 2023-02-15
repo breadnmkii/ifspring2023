@@ -1,0 +1,32 @@
+
+.box-layers {
+    background-color: #eeeeee;
+    /* Box models from inner --> outer */
+    padding: 2rem 1rem 4rem 1rem;
+    border-top: 10px solid #dddddd;
+    margin: 4rem 0;
+}
+
+.box-sizing-example {
+  background-color: #eeeeee;
+  padding: 2rem;
+  border: 10px solid #dddddd;
+  width: 100%;  /* normally targets inside of content-box --> overflows */
+  box-sizing: border-box;  /* resets box-sizing to outer box --> no overflow */
+}
+
+.h2-wrapper {
+    border: 1px solid black;
+}
+
+.overflow-example {
+    width: 50%;
+    height: 30px;
+    overflow: auto;
+}
+
+.scrollll {
+    width: 100%;
+    height: 250px;
+    overflow-y: auto;
+}
