@@ -4,17 +4,27 @@
     
     font-family: 'Open Sans', sans-serif;
     font-weight: 500;
+    font-size: 1.1rem;
 }
 
 /** Generic Fonts **/
 
 h1 {
+    font-family: 'Philosopher', sans-serif;
     font-size: 2.3em;
+    margin: 10px 0px;
 }
 
-h1, h2, h3 {
+h2, h3 {
     font-family: 'Philosopher', sans-serif;
+    font-size: 2rem;
     margin: 10px 0px;
+    
+}
+
+h4 {
+    font-family: 'Philosopher', sans-serif;
+    font-size: 1.5rem;
 }
 
 p {
@@ -29,8 +39,8 @@ p {
 
 
 /** Generic styles **/
-body {
-    
+.mobile {
+    display: none
 }
 
 #title {
@@ -45,7 +55,7 @@ body {
     height: 500px;
     background-image: url("../assets/images/header_img.png");
     background-size: cover;
-    
+    background-position: center;
 }
 
 img {
@@ -57,6 +67,10 @@ img {
     margin-right: auto;
 }
 
+.intro {
+    margin: 0px 150px 150px 150px;
+    max-width: 1920px;
+}
 
 #intro-section {
     display: flex;
@@ -70,6 +84,7 @@ img {
 }
 
 #quick-info {
+    margin-left: 150px;
     width: 30%;
     min-width: 100px;
 
@@ -77,7 +92,7 @@ img {
 
     border-style: solid;
     border-color: #C7B100;
-    border-width: 2px;
+    border-width: 4px;
 
 }
 
@@ -103,6 +118,10 @@ img {
 
 
 /** Specific styles **/
+.intro div {
+    padding: 10px;
+}
+
 #quick-info ul {
     list-style-type: none;
 }
@@ -110,8 +129,6 @@ img {
 #quick-info h4 {
     margin-top: 15px;
     margin-bottom: 5px;
-
-    font-weight: bold;
 }
 
 #left div {
@@ -141,11 +158,102 @@ img {
     line-height: 2rem;
 }
 
-#right div {
-    margin: 0px 50px;
+.recipe div {
+    margin: 0px 150px;
     padding: 0px 25px 25px 25px;
 }
 
 .recipe ul, .recipe ol {
     margin-bottom: 25px;
+}
+
+@media (max-width: 1700px) {   
+
+    #intro-section {
+        display: inline-block;
+    }
+
+    #quick-info {
+        width: 98%;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    #left {
+        padding: 20px 75px;
+    }
+
+    #right {
+        margin-left: 352px;
+    }
+
+    .recipe div {
+        margin: 0px 150px;
+        padding: 0px 25px 25px 25px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .mobile {
+        display: block !important;
+    }
+
+    h1 {
+        font-size: 1.7rem;
+    }
+
+    h2, h3, h4 {
+        font-size: 1.3rem;
+    }
+
+    p, li {
+        font-size: 0.995rem;
+    }
+
+    #quick-info {
+        display: none;
+    }
+
+    #left {
+        display: none;
+        position: static;
+
+        width: 100%;    
+    }
+
+    #left div {
+        margin-left: 25%;
+    }
+
+    #right {
+        margin-left: 0px;
+    }
+
+    .recipe div {
+        margin: 0px 100px;
+        padding: 0px 20px 20px 20px;
+    }
+}
+
+@media (max-width: 820px) {
+    img {
+        width: 100%;
+    }
+
+    .recipe div {
+        margin: 0px 50px;
+        padding: 0px 20px 20px 20px;
+    }
+}
+
+@media (max-width: 440px) {
+    .recipe div {
+        margin: 0px 15px;
+    }
+}
+
+@media (max-width: 360px) {
+    .recipe div {
+        margin: 0px 5px;
+    }
 }
