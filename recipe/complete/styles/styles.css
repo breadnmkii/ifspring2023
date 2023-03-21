@@ -1,0 +1,69 @@
+html {
+    padding: 0;
+    margin: 0;
+    
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+}
+
+/** Generic Fonts **/
+
+h1 {
+    font-size: 2em;
+}
+
+h1, h2, h3 {
+    font-family: 'Philosopher', sans-serif;
+}
+
+.kanji {
+    font-family: 'Inria Sans', sans-serif;
+}
+
+p {
+
+}
+
+
+/** Generic styles **/
+body {
+    
+}
+
+/* WIDTH OF 350px */
+#left {
+    margin: 20px 65px;
+    width: 200px;
+
+    position: fixed;
+}
+
+#right {
+    margin: 10px 75px 10px 0px;
+    margin-left: 400px;
+}
+
+/** Specific styles **/
+
+li {
+    line-height: 1.5rem;
+}
+
+#left ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#left li:before {
+    content: "☐"; /* or any other checkbox symbol you prefer */
+    margin-right: 0.5em;
+}
+
+#left li.checked:before {
+    content: "☑"; /* or any other checked checkbox symbol you prefer */
+}
+
+#right div {
+    max-width: 800px;
+}
+
