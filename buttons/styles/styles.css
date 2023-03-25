@@ -1,0 +1,176 @@
+body {
+    color: #333;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    margin: 40px;
+}
+
+h1 {
+     font-size: 30px;
+     margin-bottom: 40px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.button_container {
+    border: 1px solid #ddd;
+    margin: 0 10px 10px 0;
+    padding: 20px;
+    width: 300px;
+    height: 300px;
+    float: left;
+    overflow: hidden;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+a#btn_indiegogo {
+    display: inline-block;
+    position: relative;
+    margin:auto;
+    margin-top: 100px;
+    padding: 8px 16px;
+    background-color: #fff;
+    color: #eb1478;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: -2px;
+    transition: all .2s;
+}
+
+a#btn_indiegogo:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #eb1478;
+    transition: all .5s;
+}
+
+a#btn_indiegogo:hover {
+    color: #fff;
+}
+
+a#btn_indiegogo:hover:before {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+a#btn_indiegogo span {
+    position: relative;
+    z-index: 10;
+}
+
+
+a#btn_lyft {
+    display: inline-block;
+    position: relative;
+    margin:auto;
+    margin-top: 50px;
+    padding: 25px;
+    background-color: black;
+    border-radius: 25px;
+    transition: all .4s;
+}
+
+a#btn_lyft:hover {
+    margin-top: 25px;
+}
+
+a#btn_lyft:hover #lyft-2 {
+    padding-bottom: 10px;
+    transition: all .4s;
+}
+
+div#lyft-1 {
+    display: inline-block;
+    background-image: url(../assets/lyft-1.jpg);
+    background-size: 75px 75px;
+
+    width: 75px;
+    height: 75px;
+}
+div#lyft-2 {
+    display: inline-block;
+    background-image: url(../assets/lyft-2.jpg);
+    background-size: 75px 75px;
+    background-repeat: no-repeat;
+
+    margin-left: -4.16px;
+    width: 75px;
+    height: 75px;
+}
+
+
+a#btn_apple {
+    display: inline-block;
+    position: relative;
+    margin:auto;
+    margin-top: 25px;
+    border-radius: 25px;
+    transition: all .3s;
+
+    background-color: lightgray;
+    border-radius: 50%;
+    padding: 25px 25px 30px 25px;
+}
+
+a#btn_apple:hover {
+    background-color: black;
+}
+
+a#btn_apple:hover div#apple {
+    background-image: url(../assets/apple-2.png);
+}
+
+
+div#apple {
+    background-image: url(../assets/apple-1.png);
+    background-size: 150px;
+
+    width: 150px;
+    height: 150px;
+}
+
+
+a#btn_teslamotors {
+    display: inline-block;
+    position: relative;
+    margin:auto;
+    margin-top: 75px;
+    border-radius: 25px;
+    transition: all .3s;
+}
+
+a#btn_teslamotors:hover {
+    margin-top: 50px;
+}
+
+
+a#btn_teslamotors:hover div#teslamotors {
+    height: 150px;
+}
+
+div#teslamotors {
+    background-image: url(../assets/teslamotors.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    width: 150px;
+    height: 120px;
+}
