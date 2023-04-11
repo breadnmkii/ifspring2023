@@ -1,0 +1,59 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: 'Inria Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 10px 50px;
+}
+
+nav #nav-wrapper { 
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+nav #nav-wrapper a {
+    padding: 25px;
+}
+nav p {
+    font-family: 'Inria Sans', serif;
+}
+
+section {
+    height: 1024px;
+}
+
+.landing-page {
+    display: inline-flex;
+    align-items: center;
+    flex-direction: row;
+
+    width: 100%;
+}
+
+.landing-page #intro-image {
+    /* background-image: url('smiley.jpg'); */
+    background-color: red;
+
+    width: 65%;
+    height: 100%;
+}
+
+.landing-page #intro-title {
+    background-color: blue;
+
+    width: 35%;
+    height: 100%;
+}
