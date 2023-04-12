@@ -5,6 +5,13 @@
 
 html {
     font-family: 'Inria Sans', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+a, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: inherit;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -16,7 +23,9 @@ nav {
     align-items: center;
     justify-content: space-between;
 
-    padding: 10px 50px;
+    width: 100%;
+    position: fixed;
+    background-color: black;
 }
 
 nav #nav-wrapper { 
@@ -25,14 +34,18 @@ nav #nav-wrapper {
     margin-right: auto;
 }
 nav #nav-wrapper a {
-    padding: 25px;
+    padding: 25px 5%;
 }
 nav p {
-    font-family: 'Inria Sans', serif;
+    color: white;
+    font-family: 'Inria Serif';
 }
 
-section {
-    height: 1024px;
+nav #MJ-icon p {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    padding: 25px 75px;
 }
 
 .landing-page {
@@ -41,19 +54,79 @@ section {
     flex-direction: row;
 
     width: 100%;
+    height: 900px;
 }
 
 .landing-page #intro-image {
-    /* background-image: url('smiley.jpg'); */
-    background-color: red;
+    background-image: url('../assets/mj-bw.jpg');
+    background-repeat: no-repeat;
+    background-size: 1300px 750px;
+    background-position: left -150px top 275px;
+    background-color: black;
 
-    width: 65%;
+    width: 55%;
     height: 100%;
 }
 
 .landing-page #intro-title {
-    background-color: blue;
+    background-color: white;
 
-    width: 35%;
+    width: 45%;
     height: 100%;
+}
+.landing-page #intro-title h1 {
+    margin-top: 50vh;
+
+    font-weight: 500;
+    font-size: 7vw;
+    text-align: center;
+    color: black;
+}
+
+.content-page {
+    text-align: center;
+    padding: 25px;
+    margin: 0px 15%;
+}
+
+.content-page h2 {
+    margin: 75px 0px;
+}
+
+.content-page #timeline {
+    display: flex;
+
+    text-align: center;
+}
+
+.content-page .slide {
+    margin-bottom: 150px;
+}
+
+#gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#gallery .photo {
+    width: 600px;
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    margin: 50px 0px;
+}
+
+#gallery #photo-1 {
+    background-position: right top 10px;
+    background-image: url('../assets/R.jpg')
+}
+
+#gallery #photo-2 {
+    background-image: url('../assets/tall-jump.jpg')
+}
+
+#gallery #photo-3 {
+    background-image: url('../assets/tall-short.jpg')
 }
