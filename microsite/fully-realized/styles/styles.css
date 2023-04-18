@@ -228,8 +228,7 @@ footer h4, footer h5 {
 
     .landing-page #intro-image {
         width: 100%;
-        /* background-size: */
-        background-position: right -10px top 0px;
+        background-position: right -30vw top -80px;
     }
 
     .landing-page #intro-title {
