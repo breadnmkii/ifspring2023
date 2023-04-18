@@ -48,7 +48,10 @@
 
 /* Media query for mobile view */
 @media (max-width: 768px) {
+    .slide {
+        padding: 0px 50px;
+    }
     .slide p {
-        margin: 0px 5%;
+        margin: 0
     }
 }
