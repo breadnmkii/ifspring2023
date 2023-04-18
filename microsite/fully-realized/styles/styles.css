@@ -7,7 +7,6 @@ html {
     font-family: 'Inria Sans', sans-serif;
     background-color: black;
     color: white;
-    overflow-x: hidden;
 }
 
 a, a:visited, a:hover, a:active {
@@ -253,5 +252,15 @@ footer h4, footer h5 {
         font-size: 9vw;
         text-align: center;
         color: black;
+    }
+
+
+    #gallery .photo {
+        width: 300px;
+        height: 300px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+        margin: 50px 0px;
     }
 }
