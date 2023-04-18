@@ -5,11 +5,15 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../styles/styles.css">
+        <link rel="stylesheet" href="../styles/timeline.css">
 
         <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300&family=Josefin+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+        <!-- Fontawesome Icons -->
+        <script src="https://kit.fontawesome.com/015c6243b2.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <nav>
@@ -26,39 +30,41 @@
         <section class="content-page">
             <h2>A TIMELINE</h2>
             <div id="timeline">
-                <div class="slide" id="career">
-                    <h3>His Career</h3>
-                    <p>1984-1999</p>
-                    <img>
-                    <p>
-                        His professional career spanned 15 seasons, during which he won six NBA championships with the Chicago Bulls and five MVP awards. Jordan was known for his incredible scoring ability, averaging 30.1 points per game throughout his career, the highest in NBA history. He was also a ten-time scoring champion and a five-time NBA MVP.
-                    </p>
+                <div class="slide active" id="career">
+                  <h3>His Career</h3>
+                  <p>1984-1999</p>
+                  <img>
+                  <p>
+                    His professional career spanned 15 seasons, during which he won six NBA championships with the Chicago Bulls and five MVP awards. Jordan was known for his incredible scoring ability, averaging 30.1 points per game throughout his career, the highest in NBA history. He was also a ten-time scoring champion and a five-time NBA MVP.
+                  </p>
                 </div>
                 <div class="slide" id="trouble">
-                    <h3>Rough Waters</h3>
-                    <p>xxxx-xxxx</p>
-                    <img>
-                    <p>
-                        ...write about life struggles and gambling/hobbies...
-                    </p>
+                  <h3>Rough Waters</h3>
+                  <p>xxxx-xxxx</p>
+                  <img>
+                  <p>
+                    ...write about life struggles and gambling/hobbies...
+                  </p>
                 </div>
                 <div class="slide" id="philanthropy">
-                    <h3>Passing it Forward</h3>
-                    <p>xxxx-xxxx</p>
-                    <img>
-                    <p>
-                        ...write about philanthropy efforts and benefits to NBA/community...
-                    </p>
+                  <h3>Passing it Forward</h3>
+                  <p>xxxx-xxxx</p>
+                  <img>
+                  <p>
+                    ...write about philanthropy efforts and benefits to NBA/community...
+                  </p>
                 </div>
                 <div class="slide" id="legacy">
-                    <h3>The Largest Footprint</h3>
-                    <p>xxxx-xxxx</p>
-                    <img>
-                    <p>
-                        ...write about his legacy in NBA, business advancements (jumpman), etc...
-                    </p>
+                  <h3>The Largest Footprint</h3>
+                  <p>xxxx-xxxx</p>
+                  <img>
+                  <p>
+                    ...write about his legacy in NBA, business advancements (jumpman), etc...
+                  </p>
                 </div>
-            </div>
+                <a class="prev" onclick="prevSlide()"><i class="fas fa-chevron-left"></i></a>
+                <a class="next" onclick="nextSlide()"><i class="fas fa-chevron-right"></i></a>
+              </div>              
         </section>
 
         <footer>
@@ -67,4 +73,5 @@
             <h5>Copyright ART388 2023 ©</h5>
         </footer>
     </body>
+    <script src="../scripts/timeline.js"></script>
 </html>
