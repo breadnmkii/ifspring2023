@@ -1,0 +1,274 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: 'Inria Sans', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+a, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+h7 {
+    font-family: 'Petit Formal Script', cursive;
+    font-size: 1rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    position: fixed;
+    background-color: black;
+}
+
+nav #nav-wrapper { 
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav #nav-wrapper a {
+    padding: 25px 5%;
+}
+
+nav p {
+    color: white;
+    font-family: 'Inria Serif';
+}
+
+nav #focused {
+    color: #CE1141;
+    font-weight: bold;
+}
+
+nav #MJ-icon p {
+    color: #CE1141;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    padding: 25px 75px;
+}
+
+nav::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+    pointer-events: none;
+  }
+  
+
+/* Hamburger icon styles */
+#hamburger-icon {
+    display: none;
+    cursor: pointer;
+
+    padding: 25px 20px;
+    font-size: 2rem;
+
+    color: #CE1141;
+}
+
+
+
+.landing-page {
+    display: inline-flex;
+    align-items: center;
+    flex-direction: row;
+
+    width: 100%;
+    height: 900px;
+}
+
+.landing-page #intro-image {
+    background-image: url('../assets/mj-bw.jpg');
+    background-repeat: no-repeat;
+    background-size: 1300px 850px;
+    background-position: left -280px top 50px;
+    background-color: black;
+
+    width: 55%;
+    height: 100%;
+}
+
+.landing-page #intro-title {
+    background-color: white;
+
+    width: 45%;
+    height: 100%;
+}
+.landing-page #intro-title h1 {
+    margin-top: 350px;
+
+    font-weight: 500;
+    font-size: 9vw;
+    text-align: center;
+    color: black;
+}
+
+.content-page {
+    text-align: center;
+    padding: 40px 0px;
+}
+
+.content-page img {
+    width: 750px;
+}
+
+.content-page h2 {
+    margin: 75px 0px 25px 0px;
+}
+
+.content-paragraphs {
+    margin-top: 50px;
+    padding: 30px 15%;
+
+    font-size: 1.15rem;
+    line-height: 25px;
+
+    text-align: left;
+    color: black;
+    background-color: white;
+}
+
+.content-paragraphs p {
+    margin: 20px 0px;
+}
+
+
+
+#gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#gallery .photo {
+    width: 600px;
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    margin: 50px 0px;
+}
+
+#gallery #photo-1 {
+    background-position: right top 10px;
+    background-image: url('../assets/R.jpg')
+}
+
+#gallery #photo-2 {
+    background-image: url('../assets/tall-jump.jpg')
+}
+
+#gallery #photo-3 {
+    background-image: url('../assets/tall-short.jpg')
+}
+
+
+footer {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 100px 0px 50px 0px;
+
+    text-align: center;
+}
+
+footer h4, footer h5 {
+    padding: 15px;
+}
+
+
+
+/* Media query for mobile view */
+@media (max-width: 768px) {
+    nav #nav-wrapper {
+        display: none;
+    }
+
+    .active-burger {
+        display: flex !important;
+        flex-direction: column;
+        position: fixed;
+        top: 70px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.533);
+    }
+
+    #hamburger-icon {
+        display: block;
+    }
+
+    nav #nav-wrapper a {
+        padding: 20px;
+        border-bottom: 1px solid white;
+        font-size: 1.5rem;
+    }
+
+    nav #nav-wrapper a {
+        padding: 20px;
+        border-bottom: 1px solid white;
+        font-size: 1.5rem;
+      }
+    
+      nav #MJ-icon p {
+        padding: 20px;
+      }
+
+
+    .landing-page {
+        flex-direction: column-reverse;
+    }
+
+    .landing-page #intro-image {
+        width: 100%;
+        background-position: right -70vw top -10px;
+    }
+
+    .landing-page #intro-title {
+        width: 100%;
+        height: 75%;
+    }
+
+    .landing-page #intro-title h1 {
+        margin-top: 200px;
+    
+        font-weight: 500;
+        font-size: 9vw;
+        text-align: center;
+        color: black;
+    }
+
+    .content-page img {
+        width: 320px;
+    }
+
+
+    #gallery .photo {
+        width: 300px;
+        height: 300px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+        margin: 50px 0px;
+    }
+}
