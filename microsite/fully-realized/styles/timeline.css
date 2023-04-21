@@ -22,6 +22,11 @@
     transition: opacity 1s ease-in-out;
 }
 
+.slide img {
+    width: 200px;
+    padding-top: 10px;
+}
+
 .slide p {
     margin: 0px 25%;
 }
@@ -32,17 +37,17 @@
 
 .prev, .next {
     position: relative;
-    top: 80%;
+    top: 50%;
     font-size: 24px;
     cursor: pointer;
 }
 
 .prev {
-    right: 50px;
+    right: 25vw;
 }
 
 .next {
-    left: 50px;
+    left: 25vw;
 }
 
 
@@ -53,5 +58,14 @@
     }
     .slide p {
         margin: 0
+    }
+
+    .slide img {
+        width: 35vw;
+    }
+
+    .prev, .next {
+        top: 1%;
+        font-size: 16px;
     }
 }
