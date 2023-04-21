@@ -83,7 +83,6 @@ nav::after {
     font-size: 2rem;
 
     color: #CE1141;
-    
 }
 
 
@@ -98,7 +97,7 @@ nav::after {
 }
 
 .landing-page #intro-image {
-    background-image: url('../assets/mj-intro.jpg');
+    background-image: url('../assets/mj-bw.jpg');
     background-repeat: no-repeat;
     background-size: 1300px 850px;
     background-position: left -280px top 50px;
@@ -238,13 +237,14 @@ footer h4, footer h5 {
 
     .landing-page #intro-image {
         width: 100%;
-        background-position: right -30vw top -80px;
+        background-position: right -70vw top -10px;
     }
 
     .landing-page #intro-title {
         width: 100%;
         height: 75%;
     }
+    
     .landing-page #intro-title h1 {
         margin-top: 200px;
     
