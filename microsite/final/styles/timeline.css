@@ -29,6 +29,7 @@
 
 .slide p {
     margin: 0px 25%;
+    padding-top: 20px;
 }
 
 .slide.active {
